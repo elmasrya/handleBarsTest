@@ -16,11 +16,19 @@
 <div class="hero-unit">
       <h1>Books</h1>
       <ul id="books"></ul>
+      <h1>DVDS</h1>
+      <ul id="dvds"></ul>
     </div>
 
     <script type="text/x-handlebars-template" id="book">
     {{#each books}}
         <li> {{ title }} by {{ author }} </li>
+        {{/each}}
+    </script>
+
+    <script type="text/x-handlebars-template" id="dvd">
+    {{#each dvds}}
+        <li> {{ name }} by {{ company }} </li>
         {{/each}}
     </script>
 
