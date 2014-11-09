@@ -1,4 +1,5 @@
 (function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['dvds'] = template({"1":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "    <li> "
@@ -15,7 +16,6 @@ templates['dvds'] = template({"1":function(depth0,helpers,partials,data) {
 })();
 
 
-
 var someApi = {
   dvds : [
     { name: 'Fun with Dick and Jane', company: 'New Line Cinemas' },
@@ -24,7 +24,6 @@ var someApi = {
   ]
 };
 
-//Creating our handlebars function
 
 
 var rendered2= Handlebars.templates['dvds'];
